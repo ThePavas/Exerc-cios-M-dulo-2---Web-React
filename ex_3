@@ -1,0 +1,14 @@
+class Ponto{
+    constructor(pontoX,pontoY){
+        if(isNaN(pontoX) || isNaN(pontoY)) throw "Valor informado não é um espreção numerica";
+        this.pontoX = pontoX;
+        this.pontoY = pontoY;
+    }
+}
+
+const ponto1 = new Ponto(5,10);
+const ponto2 = new Ponto(5,10);
+
+
+console.log(ponto1);
+console.log(ponto2);

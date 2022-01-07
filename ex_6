@@ -1,0 +1,46 @@
+class veiculo{
+    constructor(marca, modelo, licenca){
+        this.marca   = marca;
+        this.modelo  = modelo;
+        this.licenca = licenca;
+    }
+
+
+}
+
+class barco extends veiculo{
+    constructor(marca, modelo, licenca, ancorado){
+        super(marca, modelo, licenca);
+        this.ancorado = ancorado;
+    }
+
+    ancorado(num){
+        if (num == 1){
+            console.log('O navio esta ancorado');
+        } else{
+            console.log('O navio não esta ancorado');
+        }
+    }
+
+}
+
+
+class carro extends veiculo{
+    constructor(marca, modelo, licenca, placa ){
+        super(marca, modelo, licenca);
+        this.placa = placa;
+    }
+
+    alarme(num){
+        if (num == 1){
+            console.log('Alarme ligado');
+        } else{
+            console.log('Alarme desligado');
+        }
+    }
+
+}
+
+const carro1 = new carro('111','1111','111',0000);
+console.log(carro1);
+carro1.alarme(1);

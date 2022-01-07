@@ -1,15 +1,17 @@
-class carro{
-    constructor(nome,marca, modelo,placa){
-        this.nome = nome;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.placa = placa
+const carro ={
+    carros : [
+        {nome: 'Corsa',  marca: 'FIAT',   modelo:'2022', placa:'xxx-0000'},
+        {nome: 'IARYS',  marca: 'TOYOTA', modelo:'2022', placa:'xxx-0000'},
+        {nome: 'Gol',    marca: 'TOYOTA', modelo:'2022', placa:'xxx-0000'},
+        {nome: 'Palio',  marca: 'FIAT',   modelo:'2022', placa:'xxx-0000'},
+        {nome: 'Corsa',  marca: 'FIAT',   modelo:'2022', placa:'xxx-0000'},
+    ],
 
-    }
+    adicionar : function(carro){ this.carros.push(carro) }
 }
 
-const carro1 = new carro('Crosa','FIAT',"2021","xxx-0000");
-const carro2 = new carro('Yarys','Toyota',"2022","xxx-0000");
 
-console.log(carro1);
-console.log(carro2);
+console.log(carro.carros);
+const carro1 = {nome: 'F333', marca: 'BMW', modelo:'2022', placa:'xxx-0000'};
+carro.adicionar(carro1);
+console.log(carro.carros);

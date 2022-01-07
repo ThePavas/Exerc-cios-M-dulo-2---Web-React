@@ -9,9 +9,8 @@ class veiculo{
 }
 
 class barco extends veiculo{
-    constructor(marca, modelo, licenca, ancorado){
+    constructor(marca, modelo, licenca){
         super(marca, modelo, licenca);
-        this.ancorado = ancorado;
     }
 
     ancorado(num){

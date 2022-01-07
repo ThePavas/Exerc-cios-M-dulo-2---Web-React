@@ -1,0 +1,15 @@
+class carro{
+    constructor(nome,marca, modelo,placa){
+        this.nome = nome;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.placa = placa
+
+    }
+}
+
+const carro1 = new carro('Crosa','FIAT',"2021","xxx-0000");
+const carro2 = new carro('Yarys','Toyota',"2022","xxx-0000");
+
+console.log(carro1);
+console.log(carro2);

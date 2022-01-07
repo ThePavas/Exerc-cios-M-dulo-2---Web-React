@@ -1,0 +1,32 @@
+class Conta{
+    constructor(nome, cpf, rg, staus, senha, saldo){
+        this.nome   = nome;
+        this.cpf    = cpf;
+        this.rg     = rg;
+        this.staus  = staus;
+        this.senha  = senha;
+        this.saldo  = saldo;
+
+    }
+
+    depositar(valor){
+        this.saldo+= valor;
+    }
+
+    sacar(valor){
+        if(this.saldo < valor){
+            console.log('Saldo insuficiente');
+        }else{  
+            this.saldo = this.saldo - valor;
+        }
+    }
+}
+
+const c = new Conta('Sandro','000000','000000','ativo',123,200);
+console.log(c);
+c.depositar(400);
+console.log(c);
+c.sacar(100);
+console.log(c);
+c.sacar(1000);
+console.log(c);
